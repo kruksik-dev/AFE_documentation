@@ -24,6 +24,9 @@ MCORD HUB, you will need to prepare the following:
 
 * Paper clip or the jumper to short the two pins on the hub.
 
+
+
+
 Flashing instruction
 --------------------
 
@@ -56,6 +59,18 @@ and the power source. Make sure that the ``boot`` pins are not
 short-circuited and then connect the power supply and the HUB to the 
 computer. If everything is done successfully, the HUB should be detected 
 as mass storage.
+
+AFE flesh
+=========
+
+
+By default, AFE mounted on the ends of boards works in bootloader mode. This allows you to mofidy the AFE software
+by directly connecting through the USB-C port located on the board. In order to upload a new software, connect using USB-C cable to AFE and use 
+one of the STM32 programmer like `STM32Cube <https://www.st.com/en/development-tools/stm32cubeprog.html>`_. The update is done in the same way as you upload a newer version 
+of the software to the HUB by removing the previous version from the memory and selecting the option to upload a new file in the side panel. You can find the latest AFE software directly 
+here.
+
+
 
 Loading files
 =============
