@@ -56,6 +56,8 @@ In order to safely disconnect with our server, send a command containing the wor
 
    json_object(['!disconnect'])
 
+By default, the server is started at device startup and runs on a separate thread, so there is no need to start the server manually each time.
+
 
 Available HUB methods
 =====================
